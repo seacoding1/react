@@ -1,5 +1,10 @@
 import { Fragment } from "react"
-import ReterationComponent from "./component/ReterationComponent";
+import IterationComponent from "./component/IterationComponent";
+import IterationComponent2 from "./component/IterationComponent2";
+import IterationComponentQ from "./component/IterationComponentQ";
+import IterationComponentQ2 from "./component/IterationComponentQ2";
+
+
 
 const App = () => {
     return(
@@ -9,7 +14,20 @@ const App = () => {
         map (콜백(item,index,arr))
          */
         <Fragment>
-            <ReterationComponent/>
+            <IterationComponent/>
+
+            <hr/>
+
+            <IterationComponent2/>
+
+            <hr/>
+
+            <IterationComponentQ/>
+
+            <hr/>
+
+            <IterationComponentQ2/>
+
         </Fragment>
     )
 }
