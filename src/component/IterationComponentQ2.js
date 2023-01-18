@@ -45,9 +45,12 @@ const IterationComponentQ2 = () => {
 
     const handleChange2 = (e) => {
         setSearch(e.target.value);
+        
+    }
+
+    const handleEnter = (e) => {
         if(e.keyCode == 13) {
             handleSearch();
-            console.log('a');
         };
     }
 
@@ -63,7 +66,7 @@ const IterationComponentQ2 = () => {
         <>
             <h3>컴포넌트 반복 실습</h3>
 
-            <input type="text" onChange={handleChange2} value={search}/>
+            <input type="text" onChange={handleChange2} onKeyUp={handleEnter} value={search}/>
             <button onClick={handleSearch}>검색</button> <br/>
 
             <select onChange={handleChange}>
